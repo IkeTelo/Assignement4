@@ -33,12 +33,10 @@ if not correct
 main
 """
 
-
 def main():
-    question = "What is the capital of California?"
+    question = "What is the capital of California "
     answer = "Sacramento"
     ask(question, answer)
-
 
 def ask(question, answer, max_tires=3):
     tries = 0
@@ -51,3 +49,6 @@ def ask(question, answer, max_tires=3):
             break
     if ans != answer:
         print("You have used up your allotment of guesses.")
+
+
+main()
